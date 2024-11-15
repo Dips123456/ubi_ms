@@ -1,0 +1,15 @@
+spring:
+   application:
+      name: cust-kyc-mob-bff-service-application
+ekyc:
+   service:
+      proxy:
+         base:
+            path: api/v1/aadhaar/
+            url: https://adhaar-ekyc-service-proxy-aadhaar-dev.apps.nprd.ubidp.local/
+         generateotp: generateOtp
+         validateotp: validateOtp
+
+springdoc:
+   swagger-ui:
+      path: /swagger.html
